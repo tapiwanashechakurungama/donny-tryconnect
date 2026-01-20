@@ -5,6 +5,7 @@ import HowItWorksSection from "@/components/HowItWorksSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/Education.jpg";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -37,16 +38,16 @@ const Index = () => {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 pt-8 sm:pt-12 lg:pt-16 justify-center">
-                <a href="/signup" className="inline-block">
+                <Link to="/signup" className="inline-block">
                   <button className="text-lg sm:text-xl lg:text-2xl px-8 sm:px-10 lg:px-12 py-5 sm:py-6 lg:py-7 bg-white text-blue-600 min-h-[56px] sm:min-h-[64px] w-full sm:w-auto transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl rounded-lg font-semibold">
                     Get Started
                   </button>
-                </a>
-                <a href="/dashboard-select" className="inline-block">
+                </Link>
+                <Link to="/dashboard-select" className="inline-block">
                   <button className="text-lg sm:text-xl lg:text-2xl px-8 sm:px-10 lg:px-12 py-5 sm:py-6 lg:py-7 bg-green-600 hover:bg-green-700 text-white min-h-[56px] sm:min-h-[64px] w-full sm:w-auto transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl rounded-lg font-semibold">
                     Explore Features
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
